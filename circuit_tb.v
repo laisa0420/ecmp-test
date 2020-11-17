@@ -19,7 +19,7 @@ module circuit_tb;
       $dumpfile("circuit.vcd");
       $dumpvars();
       en=0;
-      for (i=0; i<100; i=i+1) begin
+      for (i=0; i<99; i=i+1) begin
       	x=$urandom(seed);
         @(posedge clk) #1 en=1;$display("%d %d",x,y);
       end
